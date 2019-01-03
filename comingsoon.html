@@ -1,0 +1,149 @@
+
+
+
+<style>
+    body, html {
+        height: 100%;
+        margin: 0;
+    }
+
+    /*header.head{*/
+    /*display: none;*/
+    /*}*/
+    .intro-heading{
+        display: none;
+    }
+    #mainNav {
+        background-color: #022a62;
+    }
+
+    header {
+        /*background: url('https://source.unsplash.com/XT5OInaElMw/1600x900') black no-repeat center center scroll;*/
+        background: url('http://370.e3e.myftpupload.com/wp-content/uploads/2018/02/aerial-shots-3.jpg') black no-repeat center center scroll;
+        background-size: 100% 100%;
+    }
+    /*.bgimg {*/
+    /*background-image: url('http://370.e3e.myftpupload.com/wp-content/uploads/2018/09/WRMS-boys.jpg');*/
+    /*height: 100%;*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*position: relative;*/
+    /*color: white;*/
+    /*font-family: "Courier New", Courier, monospace;*/
+    /*font-size: 25px;*/
+    /*}*/
+
+    .topleft {
+        position: absolute;
+        top: 0;
+        left: 16px;
+    }
+
+    .bottomleft {
+        position: absolute;
+        bottom: 0;
+        left: 16px;
+    }
+
+    .middle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .middle h1 {
+        font-size: 70px;
+    }
+    hr {
+        margin: auto;
+        width: 40%;
+    }
+    .middle{
+        font-size: 60px;
+        color:#d81613;
+        font-family: 'Arial Black';
+        text-shadow: 1px 1px 1px #000, 3px 3px 5px #022a62;
+    }
+    #countdown {
+        font-size:50px;
+        color:#d81613;
+        font-family: 'Arial Black';
+        text-shadow: 1px 1px 1px #000, 3px 3px 5px #022a62;
+    }
+
+    @media (pointer: coarse) and (hover: none) {
+        .middle h1 {
+            font-size: 20px;
+        }
+
+        #countdown {
+            font-size: 20px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        /*.container {*/
+        /*max-width: 100%;*/
+        /*}*/
+        /*.content {*/
+        /*width: 100%;*/
+        /*}*/
+        /*.sidebar {*/
+        /*width: 100%;*/
+        /*}*/
+        .middle h1 {
+            font-size: 20px;
+        }
+
+        #countdown {
+            font-size: 20px;
+        }
+
+    }
+</style>
+
+<div class="bgimg">
+    <div class="topleft">
+        <!--<p>Logo</p>-->
+    </div>
+    <div class="middle">
+        <h1>COMING SOON</h1>
+        <!--<hr>-->
+        <p id="countdown" style=""></p>
+    </div>
+    <div class="bottomleft">
+        <!--<p>Some text</p>-->
+    </div>
+</div>
+
+<script>
+  // Set the date we're counting down to
+  var countDownDate = new Date("Jan 5, 2019 15:37:25").getTime();
+
+  // Update the count down every 1 second
+  var countdownfunction = setInterval(function() {
+
+    // Get todays date and time
+    var now = new Date().getTime();
+
+    // Find the distance between now an the count down date
+    var distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Output the result in an element with id="demo"
+    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+
+    // If the count down is over, write some text
+    if (distance < 0) {
+      clearInterval(countdownfunction);
+      document.getElementById("countdown").innerHTML = "EXPIRED";
+    }
+  }, 1000);
+</script>
