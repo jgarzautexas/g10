@@ -45,6 +45,11 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
+    .sponsorship .inner, .job .inner {
+        box-sizing: border-box;
+        border: 1px solid #e49d4c;
+        border-radius: 3px;
+    }
 </style>
 
 
@@ -68,6 +73,14 @@
             padding-top: .5em;
             padding-bottom: .5em;
         }
+    /*.panel-heading, .panel-heading.panel-title {*/
+    /*background-color: #a91414; !important;*/
+    /*color: white !important;*/
+    /*text-align: center;*/
+    /*padding-top: .5em;*/
+    /*padding-bottom: .5em;*/
+    /*}*/
+
     /*@import "bootstrap-sprockets";*/
 </style>
 <!--<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">-->
@@ -76,105 +89,87 @@
     <div class="row" id="id_sponsor_packages">
         <div class="col-sm-3">
             <div class="panel panel-default">
-                <div class="panel-heading">Panel heading without title</div>
-                <div class="panel-body">
-                    <ul class="">
-                        <li>10 users included</li>
-                        <li>2 GB of storage</li>
-                        <li>Email support</li>
-                        <li>Help center access</li>
-                    </ul>
-                    <button type="button" class="button btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
+                <div class="panel-heading text-center">
+                    <h3 class="panel-title">Model 1</h3>
+                </div>
+                <div class="panel-body text-center">
+                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <div class="card-body">
+                        <!--<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
+                <div class="panel-heading text-center">
+                    <h3 class="panel-title">Model 2</h3>
                 </div>
-                <div class="panel-body">
-                    <h3 class="panel-title">Panel title</h3>
-
-                    Panel content
+                <div class="panel-body text-center">
+                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <div class="card-body">
+                        <!--<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
+                <div class="panel-heading text-center">
+                    <h3 class="panel-title">Model 3</h3>
                 </div>
-                <div class="panel-body">
-                    Panel content
+                <div class="panel-body text-center">
+                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <div class="card-body">
+                        <!--<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                    </div>
                 </div>
             </div>
         </div>
         <div class="col-sm-3">
-
             <div class="panel panel-default">
-                <div class="panel-heading">
-                    <h3 class="panel-title">Panel title</h3>
+                <div class="panel-heading text-center">
+                    <h3 class="panel-title">Model 4</h3>
                 </div>
-                <div class="panel-body">
-                    Panel content
+                <div class="panel-body text-center">
+                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
+                    <div class="card-body">
+                        <!--<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
+                        <ul class="list-unstyled mt-3 mb-4">
+                            <li>20 users included</li>
+                            <li>10 GB of storage</li>
+                            <li>Priority email support</li>
+                            <li>Help center access</li>
+                        </ul>
+                        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
+                    </div>
                 </div>
             </div>
         </div>
 
     </div>
 </div>
-<div class="container">
-    <div class="card-deck mb-3 text-center">
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Free</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>10 users included</li>
-                    <li>2 GB of storage</li>
-                    <li>Email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>
-            </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Pro</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>20 users included</li>
-                    <li>10 GB of storage</li>
-                    <li>Priority email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>
-            </div>
-        </div>
-        <div class="card mb-4 shadow-sm">
-            <div class="card-header">
-                <h4 class="my-0 font-weight-normal">Enterprise</h4>
-            </div>
-            <div class="card-body">
-                <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>
-                <ul class="list-unstyled mt-3 mb-4">
-                    <li>30 users included</li>
-                    <li>15 GB of storage</li>
-                    <li>Phone and email support</li>
-                    <li>Help center access</li>
-                </ul>
-                <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>
-            </div>
-        </div>
-    </div>
-
-</div>
-
 
 <div class="container" id="id_sponsor_social">
     <section id="sponsors" class="wrapper style5">
@@ -257,99 +252,7 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-lg-3">
-                        <a href="https://upventur.com" class="sp-link image fit">
-                            <img src="https://www.bootstrapdenton.com/images/speakers/upventur.jpg" alt="Upventur" class=" " data-no-retina="">
-                        </a>
-                        <h3></h3>
-                        <ul class="icons center">
-                            <li>
-                                <a href="https://twitter.com/upventur1" target="_blank"><i class="icon fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://facebook.com/upventur" target="_blank"><i class="icon fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/upventur_" target="_blank"><i class="icon fa fa-instagram"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://www.linkedin.com/company/upventur" target="_blank"><i class="icon fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="http://www.kubos.co" class="sp-link image fit">
-                            <img src="https://www.bootstrapdenton.com/images/speakers/kubos.jpg" at2x="/images/speakers/kubos@2x.jpg" alt="Kubos" class=" ">
-                        </a>
-                        <h3></h3>
-                        <ul class="icons center">
-                            <li>
-                                <a href="https://twitter.com/kubostech" target="_blank"><i class="icon fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://facebook.com/kubostech" target="_blank"><i class="icon fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://github.com/openkosmosorg" target="_blank"><i class="icon fa fa-github"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="https://www.v-re.com/" class="sp-link image fit">
-                            <img src="https://www.bootstrapdenton.com/images/speakers/verus_small.png" at2x="/images/speakers/verus_small@2x.png" alt="Verus" class=" ">
-                        </a>
-                        <h3></h3>
-                        <ul class="icons center">
-                            <li>
-                                <a href="https://twitter.com/VERUS_RE" target="_blank"><i class="icon fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://facebook.com/VERUSREALESTATE" target="_blank"><i class="icon fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="https://readyrosie.com" class="sp-link image fit">
-                            <img src="https://www.bootstrapdenton.com/images/speakers/readyrosie.jpg" at2x="/images/speakers/readyrosie@2x.jpg" alt="Ready Rosie" class=" ">
-                        </a>
-                        <h3></h3>
-                        <ul class="icons center">
-                            <li>
-                                <a href="https://twitter.com/readyrosie" target="_blank"><i class="icon fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://facebook.com/readyrosie" target="_blank"><i class="icon fa fa-facebook"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://instagram.com/readyrosie" target="_blank"><i class="icon fa fa-instagram"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="http://www.beardedmonk.com" class="sp-link image fit">
-                            <img src="https://www.bootstrapdenton.com/images/speakers/bearded-monk.jpg" alt="The Bearded Monk" class=" " data-no-retina="">
-                        </a>
-                        <h3></h3>
-                        <ul class="icons center">
-                            <li>
-                                <a href="https://twitter.com/beardedmonkdn10" target="_blank"><i class="icon fa fa-twitter"></i></a>
-                            </li>
-                            <li>
-                                <a href="https://facebook.com/TheBeardedMonkStore" target="_blank"><i class="icon fa fa-facebook"></i></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col-lg-3">
-                        <a href="/sponsorships" class="sp-link image fit">
-                            <img src="https://www.bootstrapdenton.com/images/speakers/sponsor.jpg" at2x="/images/speakers/sponsor@2x.jpg" alt="Become a sponsor today!" class=" ">
-                        </a>
-                        <h3></h3>
-                        <ul class="icons center">
-                            <li>
-                                <a href="/sponsorships"><i class="icon fa fa-link"></i></a>
-                            </li>
-                        </ul>
-                    </div>
+
                 </div>
             </div>
             <ul class="actions center">
@@ -373,36 +276,11 @@
             <li>Over 900 members of our Meetup.com group and more than 1300 Twitter followers</li>
             <li>Our community consists largely of entrepreneurs, freelancers, students, and startups focused on tech / creative culture.</li>
         </ul>
-        <div class="row uniform sponsors">
-            <div class="5u -1u sponsorship">
-                <div class="inner">
-                    <h3>Table</h3>
-                    <h4>$250</h4>
-                    <ul>
-                        <li>Name / logo on website</li>
-                        <li>Highlighting post on social media</li>
-                        <li>On-stage mention at event</li>
-                        <li>Reserved table for marketing material and 1-on-1 conversations</li>
-                    </ul>
-                </div>
-            </div>
-            <div class="5u sponsorship">
-                <div class="inner">
-                    <h3>Featured Speaker</h3>
-                    <h4>$500</h4>
-                    <ul>
-                        <li>Table perks</li>
-                        <li>Post-event follow up in our newsletter including all attendees</li>
-                        <li>5 minute speaking slot</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
         <p class="container" style="text-align:center;">
             <em>If you would like to purchase a sponsorship via check or other payment method,<br>don't hesitate to contact us at <a href="mailto:info@techmill.co?subject=Bootstrap%20Denton%20%7C%20Sponsorship&amp;body=Hi%20TechMill!%0A%0AI'm%20interested%20in%20purchasing%20a%20sponsorship%20for%20Bootstrap%20Denton%202016.">info@techmill.co</a>!</em>
         </p><p>
     </p><p style="text-align:center;">
-        <a href="https://www.eventbrite.com/e/bootstrap-denton-2017-community-mixer-tickets-37864391414?discount=sponsor" class="button special-1 big">Purchase a sponsorship today</a>
+        <a href="" class="button special-1 big">Purchase a Sponsorship today</a>
     </p>
         <p></p><p></p>
     </div>
