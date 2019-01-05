@@ -13,6 +13,7 @@
     header {
         position: relative;
         background-color: black;
+        /*TODO CHECK THIS OUT*/
         height: 75vh;
         min-height: 25rem;
         width: 100%;
@@ -172,6 +173,49 @@
         color: white;
     }
 
+
+    /*@media (min-width: 768px){*/
+    @media screen and (max-width: 768px) {
+        .h1-mobile {
+            font-size: 30px !important;
+        }
+
+        .calc_header_mobile {
+            margin-top: calc(50% + 40px);
+        }
+
+
+    }
+
+    /* Extra Small Devices, Phones */
+    @media only screen and (min-width : 480px) {
+        .blog-content {
+            padding-top: 144px;
+        }
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+        .blog-content {
+            padding-top: 144px;
+        }
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+        .blog-content {
+            padding-top: 124px;
+        }
+    }
+
+    @media only screen and (min-width : 992px) {
+        .blog-content {
+            padding-top: 50px;
+        }
+    }
+
+
 </style>
 
 
@@ -180,11 +224,11 @@
     <!--<video style="margin-top: 100px" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">-->
     <!--<source src="/wp-content/uploads/2018/12/Baseball_Stadium_Fly_Over.mp4" type="video/mp4">-->
     <!--</video>-->
-    <div class="container h-100">
-        <div class="d-flex h-100 text-center align-items-center">
-            <div style="color:#d81613; text-shadow: 1px 1px 1px #000, 3px 3px 5px #022a62;" class="w-100 text-white">
-                <h1 class="display-3" style="font-size: 50px;">G10 Academy</h1>
-                <h2>Train Like a Champion Today!</h2>
+    <div class="container">
+        <div class="text-center" style="">
+            <div style="color:#d81613; text-shadow: 1px 1px 1px #000, 3px 3px 5px #022a62;" class="">
+                <h1 class="h1-mobile" style="font-size: 50px;">G10 Academy</h1>
+                <h2 class="h1-mobile">Train Like a Champion Today!</h2>
             </div>
         </div>
     </div>
@@ -208,15 +252,12 @@
             <li>Create a higher quality of fierce, but healthy competition, in our high school athletic programs that will translate to district and state championships annually</li>
             <li>
                 Provide elite athletic training for athletes that compete at the collegiate and professional level
-
             </li>
             <li>
                 Provide a place where the everyday kid can build self-esteem through physical activity without the negative stigma that comes with being a pe kid in this generation
-
             </li>
             <li>
                 To increase the level of fitness in adults in our community
-
             </li>
             <li>
                 Create an atmosphere of pride and camaraderie through physical activity in our community
@@ -227,21 +268,20 @@
 </section>
 
 <div class="container">
-    <div class="media-container-row">
+    <div class="">
         <div class="card p-3 col-12 col-md-6 col-lg-4">
             <div class="card-wrapper">
                 <div class="card-img">
-                    <!--<img src="http://370.e3e.myftpupload.com/wp-content/uploads/2018/09/WRMS-boys.jpg" alt="Mobirise" title="" media-simple="true">-->
                     <a href="/strength">
-                        <img src="/wp-content/uploads/2018/12/Strength-Training-Dumbbells_2.jpg" alt="Mobirise" title="" media-simple="true">
+                        <img src="/wp-content/uploads/2018/12/Strength-Training-Dumbbells_2.jpg">
                     </a>
                 </div>
                 <div class="card-box">
                     <a href="/strength">
-                        <h4 style="font-size: 17px" class="card-title pb-3 mbr-fonts-style display-5">Strength & Movement Programs</h4>
+                        <h4 style="font-size: 17px" class="">Strength & Movement Programs</h4>
                     </a>
 
-                    <p class="mbr-text mbr-fonts-style display-7">
+                    <p class="">
                         The staff here at G10 believe that with the right level of commitment combined with a highly
                         detailed regimented science based training plan, we can physically and mentally change your athlete
                         in a way that could notably improve the quality of their athletic career.
@@ -259,10 +299,10 @@
                     </a>
                 </div>
                 <div class="card-box ">
-                    <a href="/road-runner-run-club/"><h4 class="card-title pb-3 mbr-fonts-style display-5">
+                    <a href="/road-runner-run-club/"><h4 class="card-title">
                         Road Runner Club</h4>
                     </a>
-                    <p class="mbr-text mbr-fonts-style display-7">
+                    <p class="">
                         Beginning in the Fall of 2018 we will offer year around training opportunities for track and field and
                         cross country athletes.
                         Although our programs are design with a full time track and cross country in mind we also have options for multiple
@@ -280,9 +320,9 @@
                     </a>
                 </div>
                 <div class="card-box">
-                    <a href="/soccer-camp/"><h4 class=" display-5">G10 Academy FC</h4></a>
+                    <a href="/soccer-camp/"><h4 class="">G10 Academy FC</h4></a>
                     <h6 class="text-muted">Our Focus: Individual Player Development</h6>
-                    <p class="display-7">
+                    <p class="">
                         Individual Player Development is the key to players being able to successfully transition from one competitive
                         level to the next: rec to select, middle school to high school, high school to college.
                     </p>
@@ -345,7 +385,6 @@
                 </ul>
             </div>
         </div>
-
     </div>
 </section>
 
