@@ -11,16 +11,20 @@
         background-color: #022a62;
     }
 
-    .wrapper>.inner {
-        width: 60em;
-        margin: 0 auto;
-    }
-    #id_sponsor_social ul {
-        list-style: none;
-    }
 
-    #id_sponsor_packages ul {
-        list-style: none;
+    /* DO NOT DELETE Above CSS handles header */
+
+
+    .id_sponsor_packages ul {
+        /*list-style: none;*/
+        padding-left: 0.8em;
+    }
+    .id_sponsor_packages ul li {
+        /*list-style: none;*/
+        padding-bottom: 1em;
+    }
+    small {
+        /*font-size: 17px;}*/
     }
     button:hover {
         background-color: #022a62;
@@ -55,141 +59,159 @@
         overflow: hidden;
         text-overflow: ellipsis;
     }
-    .sponsorship .inner, .job .inner {
-        box-sizing: border-box;
-        border: 1px solid #e49d4c;
-        border-radius: 3px;
-    }
 
     section {
         padding: 100px 0;
     }
+    .panel-subhead {
+        text-align: center;
+        margin-bottom: 10px;
+    }
     @media (min-width: 576px) {
-        .card-deck {
-            -ms-flex-flow: row wrap;
-            flex-flow: row wrap;
-            margin-right: -15px;
-            margin-left: -15px;
-        }
-        .panel-heading{
+
+        .panel-heading {
             letter-spacing: .225em;
             font-weight: 700;
         }
-
-        .sponsorship .inner h3, .job .inner h3 {
-            background-color: #e49d4c;
-            color: #5c4a35;
-            text-align: center;
-            padding-top: .5em;
-            padding-bottom: .5em;
-        }
-        /*.panel-heading, .panel-heading.panel-title {*/
-        /*background-color: #a91414; !important;*/
-        /*color: white !important;*/
-        /*text-align: center;*/
-        /*padding-top: .5em;*/
-        /*padding-bottom: .5em;*/
-        /*}*/
-
-        /*@import "bootstrap-sprockets";*/
 
         .panel-default {
             border-color: #022a62;
         }
 
-        .panel-default>.panel-heading {
+        .panel-default > .panel-heading {
             color: white;
             background-color: #022a62;
             border-color: #022a62;
         }
+    }
 </style>
 
 
 <div class="container">
-    <section style=" background-image:url(/images/backgrounds/dmc-table.jpg); ">
-        <h2>Sponsorships</h2>
-        <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi autem deserunt dicta doloremque, et ex facere ipsa laudantium maxime, nemo odio officiis pariatur possimus quidem recusandae repellat voluptates! Deserunt, in.
+    <!--<section style=" background-image:url(/images/backgrounds/{}.jpg); ">-->
+    <section style="text-align: center">
+        <h1 style="color: #d81613;">Sponsorships</h1>
+        <p style="font-size: 30px"class="lead">
+            Sponsor our Champions Today!
         </p>
     </section>
 </div>
 
 <div class="container">
-    <div class="row" id="id_sponsor_packages">
-        <div class="col-sm-3">
+    <div class="row id_sponsor_packages">
+        <div class="col-sm-4">
             <div class="panel panel-default">
                 <div class="panel-heading text-center">
-                    <h3 class="panel-title">Model 1</h3>
+                    <h3 class="panel-title">Basic</h3>
                 </div>
-                <div class="panel-body text-center">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                    <div class="card-body">
+                <div class="panel-body">
+                    <h1 class="text-center">$500 <small class="text-muted">/ yr</small></h1>
+                    <div class="">
                         <!--<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>20 users included</li>
-                            <li>10 GB of storage</li>
-                            <li>Priority email support</li>
-                            <li>Help center access</li>
+                        <ul class="" style="padding-left: 0.6em;">
+                            <li>Receive a G10 hat</li>
+                            <li>Receive a G10 T-shirt</li>
+                            <li>Official team sponsor 8x10 wooden photo plaque</li>
                         </ul>
                         <!--<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>-->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
             <div class="panel panel-default">
                 <div class="panel-heading text-center">
-                    <h3 class="panel-title">Model 2</h3>
+                    <h3 class="panel-title">Fan</h3>
                 </div>
-                <div class="panel-body text-center">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                    <div class="card-body">
+                <div class="panel-body">
+                    <h1 class="text-center">$1000 <small class="text-muted">/ yr</small></h1>
+                    <div class="">
                         <!--<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>20 users included</li>
-                            <li>10 GB of storage</li>
-                            <li>Priority email support</li>
-                            <li>Help center access</li>
+                        <ul class="" style="padding-left: 0.6em;">
+                            <li>Company logo presence on all G10 social media</li>
+                            <li>Company logo on G10 monthly newsletter</li>
+                            <li>Official team sponsor 8x10 wooden photo plaque</li>
                         </ul>
                         <!--<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>-->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+        <div class="col-sm-4">
             <div class="panel panel-default">
                 <div class="panel-heading text-center">
-                    <h3 class="panel-title">Model 3</h3>
+                    <h3 class="panel-title">Supporting</h3>
                 </div>
-                <div class="panel-body text-center">
-                    <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>
-                    <div class="card-body">
+                <div class="panel-body">
+                    <h1 class="text-center">$2500 <small class="text-muted">/ yr</small></h1>
+                    <div class="">
                         <!--<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>20 users included</li>
-                            <li>10 GB of storage</li>
-                            <li>Priority email support</li>
-                            <li>Help center access</li>
+                        <ul class="">
+                            <li>G10 Academy Facility Sign</li>
+                            <li>Company logo on G10 Sponsorship web page</li>
+                            <li>Company logo on G10 Facility Logo Board</li>
+                            <li>Company logo on all team practice jerseys</li>
+                            <li>Company logo presence on all G10 social media</li>
+                            <li>Company logo on G10 monthly newsletter</li>
+                            <li>Official team sponsor 8x10 wooden photo plaque</li>
                         </ul>
                         <!--<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>-->
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-3">
+
+
+    </div>
+    <div class="row id_sponsor_packages">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading text-center">
+                    <h3 class="panel-title">Major</h3>
+                </div>
+                <div class="panel-body">
+                    <h1 class="text-center">$5000 <small class="text-muted">/ yr</small></h1>
+                    <div class="">
+                        <!--<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
+                        <ul class="">
+                            <li>Company logo on every G10 website page</li>
+                            <li>G10 Academy Facility Sign</li>
+                            <li>Company logo on G10 sponsorship web page</li>
+                            <li>Company logo on G10 Facility Logo Board</li>
+                            <li>Company logo on all team practice jerseys</li>
+                            <li>Company logo presence on all G10 social media</li>
+                            <li>Company logo on G10 monthly newsletter</li>
+                            <li>Official team sponsor 8x10 wooden photo plaque</li>
+                        </ul>
+                        <!--<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
             <div class="panel panel-default">
                 <div class="panel-heading text-center">
                     <h3 class="panel-title">Feature Sponsor</h3>
                 </div>
-                <div class="panel-body text-center">
-                    <h1 class="card-title pricing-card-title">4 <small class="text-muted">/ spots only</small></h1>
-                    <div class="card-body">
+                <div class="panel-body">
+                    <div class="panel-subhead">
+                        <h1 style="margin-bottom: 1px" class="card-title text-center">$7500 or more</h1>
+                        <small style="font-size: 100%;" class="text-muted text-center">4 spots only</small>
+                    </div>
+
+                    <div class="">
                         <!--<h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
-                        <ul class="list-unstyled mt-3 mb-4">
-                            <li>20 users included</li>
-                            <li>10 GB of storage</li>
-                            <li>Priority email support</li>
-                            <li>Help center access</li>
+                        <ul class="">
+                            <li>Official Sponsor at tournaments/meets/camps</li>
+                            <li>G10 Academy Facility Sign (premium location)</li>
+                            <li>Company logo and Company bio on G10 sponsorship web page (4 month feature)</li>
+                            <li>Company logo on G10 Academy monthly newsletter (4 month feature)</li>
+                            <li>Company logo on every G10 website page</li>
+
+                            <li>Company logo on G10 Facility Logo Board</li>
+                            <li>Company logo on all team practice jerseys</li>
+                            <li>Company logo presence on all G10 social media</li>
+                            <li>Official team sponsor 8x10 wooden photo plaque</li>
                         </ul>
                         <!--<button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>-->
                     </div>
@@ -200,27 +222,18 @@
     </div>
     <div class="row">
         <div class="">
+            <p style="text-align: center; padding-bottom: 20px">
+                Please contact us with any questions by phone 512-953-8465 or email at
+                <a href="mailto:admin@g10academy.com">admin@g10academy.com</a>
+            </p>
+
             <p style="text-align:center;">
-                <button  style="border-radius: 5px; color: #eeeeee; background: #d81613; font-size: 1.85em; width: 80%" class="btn btn-lg btn-default" type="submit">Purchase a Sponsorship Today</button>
+                <a href="/contact">
+                    <button  style='font-family:"Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif; border-radius: 5px; color: #eeeeee; background: #d81613; font-size: 1.85em; width: 80%' class="btn btn-lg btn-default" type="submit">Purchase a Sponsorship Today</button>
+
+                </a>
             </p>
         </div>
-
     </div>
 </div>
 
-<div class="container" id="id_sponsor_social">
-    <section id="sponsors" class="">
-        <div class="">
-            <sub_header class="">
-                <h2>Sponsors</h2>
-                <hr class="featurette-divider">
-                <p class="lead">These are all the organizations who make this event possible.</p>
-            </sub_header>
-            <span style="">
-                <a href="http://www.chirofx.net/" target="_blank">
-                    <img style ="background: #429de0; padding: 20px 5px 15px 40px;" src="/wp-content/uploads/2019/01/chirofxLogo.png" alt="" class="img-responsive">
-                </a>
-            </span>
-        </div>
-    </section>
-</div>
