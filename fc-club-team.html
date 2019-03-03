@@ -1,3 +1,4 @@
+
 <style>
     header {
         display: none;
@@ -9,5 +10,999 @@
     #mainNav {
         background-color: #022a62;
     }
+
+    /* iPads (landscape) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : landscape) {
+        /* Styles */
+        .blog-content {
+
+            padding-top: 154px;
+        }
+
+    }
+
+    /* iPads (portrait) ----------- */
+    @media only screen
+    and (min-device-width : 768px)
+    and (max-device-width : 1024px)
+    and (orientation : portrait) {
+        /* Styles */
+        .blog-content {
+
+            padding-top: 154px;
+        }
+
+    }
+
+    @media only screen and (max-width : 480px) {
+        .g10_fc_logo {
+            display: none;
+        }
+        .g10_h2_mobile {
+            font-size: 20px;
+        }
+        .blog-content {
+            padding-top: 0px;
+        }
+        #id_fc_content {
+            margin-top: 20px;
+        }
+
+        .id_mobile_padding_left {
+            padding-left: 20px;
+        }
+    }
+
+
 </style>
-    
+
+<style>
+  @import url(https://fonts.googleapis.com/css?family=Quicksand:400,300);
+  body{
+      //font-family: 'Quicksand', sans-serif;
+  }
+  .team{
+    //  padding:75px 0;
+    padding:1px 0;
+  }
+  h4.description{
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #999;
+    border-bottom: 1px solid rgba(0, 0, 0,0.1);
+    padding-bottom: 5px;
+  }
+  h6.description{
+  	font-weight: bold;
+  	letter-spacing: 2px;
+  	color: #999;
+  	border-bottom: 1px solid rgba(0, 0, 0,0.1);
+  	padding-bottom: 5px;
+  }
+  .profile{
+  	margin-top: 25px;
+  }
+  .profile h1{
+  	font-weight: normal;
+  	font-size: 20px;
+  	margin:10px 0 0 0;
+  }
+  .profile h2{
+  	font-size: 14px;
+  	font-weight: lighter;
+  	margin-top: 5px;
+  }
+  .profile .img-box{
+  	opacity: 1;
+  	display: block;
+  	Favorite Position: relative;
+  }
+  .profile .img-box:after{
+  	content:"";
+  	opacity: 0;
+  	background-color: rgba(0, 0, 0, 0.75);
+  	Favorite Position: absolute;
+  	right: 0;
+  	left: 0;
+  	top: 0;
+  	bottom: 0;
+  }
+  .img-box ul{
+  	Favorite Position: absolute;
+  	z-index: 2;
+  	bottom: 50px;
+  	text-align: center;
+  	width: 100%;
+  	padding-left: 0px;
+  	height: 0px;
+  	margin:0px;
+  	opacity: 0;
+  }
+  .profile .img-box:after, .img-box ul, .img-box ul li{
+  	-webkit-transition: all 0.5s ease-in-out 0s;
+      -moz-transition: all 0.5s ease-in-out 0s;
+      transition: all 0.5s ease-in-out 0s;
+  }
+  .img-box ul i{
+  	font-size: 20px;
+  	letter-spacing: 10px;
+  }
+  .img-box ul li{
+  	width: 30px;
+      height: 30px;
+      text-align: center;
+      border: 1px solid #88C425;
+      margin: 2px;
+      padding: 5px;
+  	display: inline-block;
+  }
+  .img-box a{
+  	color:#fff;
+  }
+  .img-box:hover:after{
+  	<!-- opacity: 1; -->
+  }
+  .img-box:hover ul{
+  	<!-- opacity: 1; -->
+  }
+  .img-box ul a{
+  	-webkit-transition: all 0.3s ease-in-out 0s;
+  	-moz-transition: all 0.3s ease-in-out 0s;
+  	transition: all 0.3s ease-in-out 0s;
+  }
+  .img-box a:hover li{
+  	<!-- border-color: #fff;
+  	color: #88C425; -->
+  }
+  a{
+      color:#88C425;
+  }
+  a:hover{
+      text-decoration:none;
+      color:#519548;
+  }
+  i.red{
+      color:#BC0213;
+  }
+</style>
+<div style="padding-left: 50px; padding-right: 50px"class="" id="id_fc_content">
+
+    <div class="row">
+        <div class="col-sm-3">
+            <img style ="" src="/wp-content/uploads/2019/01/G10FC.png" alt="" class="g10_fc_logo img-responsive">
+
+        </div>
+        <div class="col-sm-6" style="margin-top: 10px">
+            <div style="text-align: center">
+                <h1 style="color:#d81613; text-shadow: 1px 1px 1px #000, 3px 3px 5px #022a62;" >G10 ACADEMY FC</h1>
+                <h3>Club Team </h3>
+                <!--<h4 class="text-muted">Our Focus: Individual Player Development</h4>-->
+            </div>
+        </div>
+        <div class="col-sm-3">
+            <img style="float: right;" src="/wp-content/uploads/2019/01/G10FC.png" alt="" class="g10_fc_logo img-responsive">
+
+        </div>
+
+    </div>
+    <hr class="featurette-divider">
+
+    <div style="text-align: center">
+        <h4 class="text-muted">Our Focus: Individual Player Development</h4>
+        <p>
+            Individual Player Development is the key to players being able to successful transition from one competitive
+            level to the next: rec. to select, middle school to high school, high school to college.
+        </p>
+    </div>
+
+    <!-- <div class="row">
+      <h3>2019 Spring Soccer Roster</h2>
+    </div> -->
+
+    <hr class="featurette-divider">
+
+    <div style="display:none" class="row" id="roster">
+      <section_v2 class="team">
+        <div class="container-remove">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <div class="col-lg-12">
+                <h4 class="description">2019 SPRING SOCCER ROSTER</h4>
+                <div class="row pt-md">
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <!-- <img src="http://placehold.jp/600x700.png" class="img-responsive"> -->
+                      <img src="/wp-content/uploads/2019/02/Peyton.jpg" class="img-responsive">
+
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Peyton Barto</h1>
+                    <h2>Position</h2>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/01/G10FC.png" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Olivia Gatlin</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/02/Amelia.jpg" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Amelia Kelley</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/01/G10FC.png" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Zowie Kelley</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/02/Annabelle.jpg" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Annabelle Merlick</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/01/G10FC.png" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Isabella Pena</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/02/Ava.jpg" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Ava Skonning</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/02/Ellie.jpg" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Elizabeth Skonning</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/02/Katey.jpg" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Katey Tisdale</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/02/Maya.jpg" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Maya Tisdale</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/02/Sienna.jpg" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Sienna Ward</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+                  <div class="col-lg-3 col-md-3 col-sm-4 col-xs-12 profile">
+                    <div class="img-box">
+                      <img src="/wp-content/uploads/2019/02/Izzy-Traut.jpg" class="img-responsive">
+                      <!-- <ul class="text-center">
+                        <a href="#"><li><i class="fa fa-facebook"></i></li></a>
+                        <a href="#"><li><i class="fa fa-twitter"></i></li></a>
+                        <a href="#"><li><i class="fa fa-linkedin"></i></li></a>
+                      </ul> -->
+                    </div>
+                    <h1>Izzy Traut</h1>
+                    <h2>Position</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section_v2>
+    </div>
+    <!-- New SECTION -->
+    <style>
+      .odd {
+        background-color: #f9f9f9;
+      }
+      #player_rosters ul{
+        list-style: none;
+        padding: 2px;
+      }
+      #player_rosters .row {
+          margin-top: 12px;
+          margin-bottom: 12px;
+          padding-top: 10px;
+          padding-bottom: 10px;
+      }
+      </style>
+
+      <div class="row">
+        <div class="">
+          <div class="col-lg-12">
+            <h4 class="description">2019 SPRING SOCCER ROSTER</h4>
+          </div>
+        </div>
+      </div>
+
+    <div class="container" id="player_rosters">
+
+      <div class="row odd" style="">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/02/Peyton.jpg" class="img-responsive">
+            <span>PAYTON BARTO</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul>
+             <li>
+               School:
+               <span class="text-muted">Lake Travis MS</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">6th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Defender</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Alex Morgan</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">6 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Soccer player</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Texas A&M</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">11</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">The encouragement my mom gives me before practice motivates me at soccer.  I am motivated to do well in school and soccer so that I can succeed in life.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+
+      <div class="row even">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/01/G10FC.png" class="img-responsive">
+            <span>OLIVIA GATLIN</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul style="">
+             <li>
+               School:
+               <span class="text-muted">Lake Pointe Elementary</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">5th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Forward</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Mia Hamm and Alex Morgan</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">6 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Surgical Nurse</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">North Carolina</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">11</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Mastering things/skills that may not come easy to me.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+
+      <div class="row odd">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/02/Amelia.jpg" class="img-responsive">
+            <span>AMELIA KELLEY</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul style="">
+             <li>
+               School:
+               <span class="text-muted">Lakeway Elementary</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">5th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Defense</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Katie Glen</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">6 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Lawyer and first woman president</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Harvard Law</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">11</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">I want to be the best I can be!</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+
+      <div class="row even">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/01/G10FC.png" class="img-responsive">
+            <span>ZOWIE KELLEY</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <p>Bio coming soon</p>
+          <ul style="display:none">
+             <li>
+               School:
+               <span class="text-muted">Barton Creek ES</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">5th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Midfield</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Alex Morgan</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">6 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Engineer</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Texas A&M</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">10</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Competition motivates her to be better.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+
+      <div class="row odd">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/01/G10FC.png" class="img-responsive">
+            <span>ISABELLA PENA</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul style="">
+             <li>
+               School:
+               <span class="text-muted">HBMS</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">5th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Goalie</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Manuel Neuer</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">6 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Veterinarian or Soccer Player</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Texas A&M</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">11</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">I'm inspired by people who try to make the world better
+                 by their good actions like helping others and building each other up.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+
+      <div class="row even">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/02/Ava.jpg" class="img-responsive">
+            <span>AVA SKONNING</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul>
+             <li>
+               School:
+               <span class="text-muted">West Ridge MS</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">7th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Defender</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Alex Morgan</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">1 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Architect</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Baylor</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">12</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Passion of the task.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+      <div class="row odd">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/02/Ellie.jpg" class="img-responsive">
+            <span>ELIZABETH SKONNING</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul>
+             <li>
+               School:
+               <span class="text-muted">Barton Creek ES</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">5th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Midfield</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Alex Morgan</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">6 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Engineer</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Texas A&M</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">10</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Competition motivates her to be better.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+      <div class="row even">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/02/Katey.jpg" class="img-responsive">
+            <span>KATEY TISDALE</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul>
+             <li>
+               School:
+               <span class="text-muted">West Ridge MS</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">7th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Forward</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted"></span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">9 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Doctor</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Baylor</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">13</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Getting compliments motivates her..</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+      <div class="row odd">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/02/Maya.jpg" class="img-responsive">
+            <span>MAYA TISDALE</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul>
+             <li>
+               School:
+               <span class="text-muted">Barton Creek ES</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">5th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Defender</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Alex Morgan</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">7 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Soccer player</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Texas A&M</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">11</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Getting compliments motivates her.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+      <div class="row even">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/02/Sienna.jpg" class="img-responsive">
+            <span>SIENNA WARD</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul>
+             <li>
+               School:
+               <span class="text-muted">Lake Pointe ES</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">5th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Outside Midfielder</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Cam Ward</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">5 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Physicist/MIT professor </span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">UBC</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">11</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Knowing that I will become stronger and my family and friends.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+      <div class="row odd">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/02/Izzy-Traut.jpg" class="img-responsive">
+            <span>IZZY TRAUT</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul>
+             <li>
+               School:
+               <span class="text-muted">Hudson Bend MS</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">6th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Left outside mid</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Alex Morgan</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">4 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Soccer player</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Alabama</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">11</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Family and friends.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+
+      <div class="row even">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/02/Annabelle.jpg" class="img-responsive">
+            <span>Annabelle Merlick</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <ul>
+             <li>
+               School:
+               <span class="text-muted">West Ridge MS</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">7th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Forward Right</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Alex Morgan</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">7 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Engineer</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Baylor</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">12</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Being on a team and thinking about the future.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+
+      <div class="row odd">
+        <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12 profile text-center">
+          <img src="/wp-content/uploads/2019/01/G10FC.png" class="img-responsive">
+            <span>Sarah Jean Turner</span>
+        </div>
+        <div class="col-lg-8 col-md-6 col-sm-12 col-xs-12">
+          <p>Bio coming soon</p>
+          <ul style="display:none">
+             <li>
+               School:
+               <span class="text-muted">Barton Creek ES</span>
+             </li>
+             <li>
+               Grade:
+               <span class="text-muted">5th</span>
+             </li>
+             <li>
+               Favorite Position:
+               <span class="text-muted">Midfield</span>
+             </li>
+             <li>
+               Favorite Athlete:
+               <span class="text-muted">Alex Morgan</span>
+             </li>
+             <li>
+               Years of Experience:
+               <span class="text-muted">6 years</span>
+             </li>
+             <li>
+               What I want to be when I grow up?
+               <span class="text-muted">Engineer</span>
+             </li>
+             <li>
+               College I want to attend?
+               <span class="text-muted">Texas A&M</span>
+             </li>
+             <li>Age:
+               <span class="text-muted">10</span>
+             </li>
+             <li>What motivates me?
+               <span class="text-muted">Competition motivates her to be better.</span>
+             </li>
+         </ul>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="featurette-divider">
+
+
+    <div class="row" style="text-align: center">
+        <h2>Coach Rennie Rebe</h2>
+        <h2>G10 Academy FC Head Coach</h2>
+        <ul style="list-style: none;">
+            <li>2017 UIL Girls Soccer State Champion</li>
+            <li>Westlake Head Coach - 48-0 District Record</li>
+            <li>4-Year Starter Texas A&M</li>
+        </ul>
+    </div>
+
+</div>
